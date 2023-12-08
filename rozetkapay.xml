@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" method="upgrade" group="jshopping">
+	<name>PLG_JSHOPPING_ROZETKAPAY</name>
+	<author>rozetkapay.com</author>
+	<creationDate>December 2023</creationDate>
+	<authorEmail>business@rozetkapay.com</authorEmail>
+	<authorUrl>https://rozetkapay.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_JSHOPPING_ROZETKAPAY_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\JShopping\RozetkaPay</namespace>
+	<scriptfile>script.php</scriptfile>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/plg_jshopping_rozetkapay.ini</language>
+		<language tag="en-GB">en-GB/plg_jshopping_rozetkapay.sys.ini</language>
+		<language tag="uk-UA">uk-UA/plg_jshopping_rozetkapay.ini</language>
+		<language tag="uk-UA">uk-UA/plg_jshopping_rozetkapay.sys.ini</language>
+		<language tag="ru-RU">ru-RU/plg_jshopping_rozetkapay.ini</language>
+		<language tag="ru-RU">ru-RU/plg_jshopping_rozetkapay.sys.ini</language>
+	</languages>
+	<files>
+		<folder>services</folder>
+		<folder plugin="rozetkapay">src</folder>
+	</files>
+</extension>

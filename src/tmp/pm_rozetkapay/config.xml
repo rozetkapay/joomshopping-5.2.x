@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="config" addfieldprefix="Joomla\Plugin\JShopping\RozetkaPay\Field">
+		<field name="sandbox" type="radio"
+			   layout="joomla.form.field.radio.switcher"
+			   label="PLG_JSHOPPING_ROZETKAPAY_PARAMS_TESTMODE"
+			   description="PLG_JSHOPPING_ROZETKAPAY_PARAMS_TESTMODE_DESC"
+			   default="1"
+			   filter="integer">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="login" type="text"
+			   label="PLG_JSHOPPING_ROZETKAPAY_PARAMS_LOGIN"
+			   showon="sandbox:0"/>
+		<field name="password" type="text"
+			   label="PLG_JSHOPPING_ROZETKAPAY_PARAMS_PASSWORD"
+			   showon="sandbox:0"/>
+		<field name="currency" type="Currency"
+			   label="PLG_JSHOPPING_ROZETKAPAY_PARAMS_CURRENCY"
+			   description="PLG_JSHOPPING_ROZETKAPAY_PARAMS_CURRENCY_DESC">
+			<option value="">JNONE</option>
+		</field>
+		<field name="customer" type="radio"
+			   layout="joomla.form.field.radio.switcher"
+			   label="PLG_JSHOPPING_ROZETKAPAY_PARAMS_CUSTOMER"
+			   default="1"
+			   filter="integer">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="products" type="radio"
+			   layout="joomla.form.field.radio.switcher"
+			   label="PLG_JSHOPPING_ROZETKAPAY_PARAMS_PRODUCTS"
+			   default="1"
+			   filter="integer">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="transaction_end_status" type="OrderStatuses"
+			   label="JSHOP_TRANSACTION_END"
+			   default="6"
+			   layout="joomla.form.field.list-fancy-select"/>
+		<field name="transaction_pending_status" type="OrderStatuses"
+			   label="JSHOP_TRANSACTION_PENDING"
+			   default="1"
+			   layout="joomla.form.field.list-fancy-select"/>
+		<field name="transaction_failed_status" type="OrderStatuses"
+			   label="JSHOP_TRANSACTION_FAILED"
+			   default="3"
+			   layout="joomla.form.field.list-fancy-select"/>
+		<field name="transaction_refunded_status" type="OrderStatuses"
+			   label="PLG_JSHOPPING_ROZETKAPAY_PARAMS_TRANSACTION_REFUNDED"
+			   default="4"
+			   layout="joomla.form.field.list-fancy-select"/>
+	</fieldset>
+</form>
